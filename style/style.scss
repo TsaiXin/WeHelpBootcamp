@@ -2,23 +2,53 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+//左側申請人性名
+.left-menu{
+    position: fixed;
+    left: 20px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+       font-size: 24px;
+        writing-mode: vertical-lr;
+        font-weight: 300;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 300;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 300;
+    }
 }
 .header{
     .wrap{
+        width: 80%;
         max-width: 1280px;
         margin: auto;
         border-bottom: 1px solid #aaa;
+        text-align: center;
         h1{
-            text-align: center;
-            padding: 2rem;
+            padding: 1rem;
             font-size: 46px;
+        }
+        h2{
+            font-weight: 300;
+            padding: 1rem;
         }
     }
 }
 .cookie{
+    width: 80%;
     max-width: 1280px;
     margin: auto;
     display: flex;
+    justify-content: center;;
     li{
         a{
             display: block;
@@ -35,6 +65,7 @@
     }
 }
 .container{
+    width: 80%;
     max-width: 1280px;
     margin: auto;
 
@@ -54,10 +85,22 @@
     }
 }
 .footer{
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 0;
+    width: 100%;
     background-color: #000;
-    color: #fff;
-    margin-top: 3rem;
+    .wrap{
+        width: 80%;
+        max-width: 1280px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 0;
+        color: #fff;
+        margin-top: 3rem;
+        .e-mail{
+            display: flex;
+            .icon{
+                padding-right: 0.5em;
+            }
+        }
+    }
 }
